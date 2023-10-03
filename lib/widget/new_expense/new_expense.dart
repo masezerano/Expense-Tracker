@@ -15,10 +15,13 @@ class _NewExpenseState extends State<NewExpense> {
     final now = DateTime.now();
     final firstdate = DateTime(now.year - 1, now.month, now.day);
     showDatePicker(
-        context: context,
-        initialDate: now,
-        firstDate: firstdate,
-        lastDate: now);
+            context: context,
+            initialDate: now,
+            firstDate: firstdate,
+            lastDate: now)
+        .then(
+      (value) {},
+     );
   }
 
   @override
